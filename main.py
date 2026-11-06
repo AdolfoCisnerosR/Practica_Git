@@ -23,3 +23,10 @@ def consultar_estudiantes():
         print(estudiante)
 
 consultar_estudiantes()
+
+def calcular_promedio(calificaciones):
+    if len(calificaciones) == 0:
+        return 0
+    return sum(calificaciones) / len(calificaciones)
+
+print("Promedio:", calcular_promedio([80, 90, 100]))
